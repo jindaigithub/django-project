@@ -1,0 +1,14 @@
+
+version: '3'
+services:
+  postgre:
+    image: postgre
+  python:
+    build: .
+    container_name: python3.7
+    volumes:
+      - ./django-app:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - posrgre
