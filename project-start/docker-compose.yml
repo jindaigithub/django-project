@@ -1,0 +1,17 @@
+
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: django_postgre
+  python:
+    build: .
+    image: django_python
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: python
+    volumes:
+      - ./django-app:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres

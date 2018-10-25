@@ -4,9 +4,4 @@ Dockerコンテナ上でDjangoを実行させたりなど遊んでいる。
 
 ## Dockerfile
 pythonコンテナをカスタマイズする。
-
-## docker-compose
-django環境に適するようカスタマイズしてある。
-
-## requirements
-pip環境にインストールするリスト
+pythonのversionを変更する場合、ここで行う
