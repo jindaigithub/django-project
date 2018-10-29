@@ -7,6 +7,8 @@ pythonコンテナをカスタマイズする。<br>
 pythonのversionを変更する場合、ここで行う
 
 ## 手順書
+※ 現在改良中
+
 1. project-create.ps1を実行
 2. 取得したdjango-projectのsetting.pyからdatebase情報を変更する
 
